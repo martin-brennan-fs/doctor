@@ -14,6 +14,8 @@ namespace Doctor
             this.message = "Check passed successfully.";
             this.watch = new System.Diagnostics.Stopwatch();
             this.watch.Start();
+            this.name = name;
+            this.type = type;
         }
         public Type type { get; set; }
         public string name { get; set; }

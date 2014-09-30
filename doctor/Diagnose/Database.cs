@@ -119,6 +119,7 @@ namespace Doctor.Diagnose
             try
             {
                 connection.Open();
+                status.pass = true;
             }
             catch (Exception ex)
             {
