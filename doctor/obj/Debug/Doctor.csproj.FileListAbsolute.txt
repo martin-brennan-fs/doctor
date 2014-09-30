@@ -1,0 +1,15 @@
+C:\Users\Martin\AppData\Local\Temporary Projects\Doctor\obj\Debug\Doctor.csprojResolveAssemblyReference.cache
+C:\repos\doctor\doctor\obj\Debug\doctor.csprojResolveAssemblyReference.cache
+C:\repos\doctor\doctor\bin\Debug\doctor.dll.config
+C:\repos\doctor\doctor\bin\Debug\doctor.dll
+C:\repos\doctor\doctor\bin\Debug\doctor.pdb
+C:\repos\doctor\doctor\bin\Debug\EntityFramework.dll
+C:\repos\doctor\doctor\bin\Debug\MySql.Data.dll
+C:\repos\doctor\doctor\bin\Debug\EntityFramework.xml
+C:\repos\doctor\doctor\obj\Debug\doctor.dll
+C:\repos\doctor\doctor\obj\Debug\doctor.pdb
+C:\repos\doctor\doctor\bin\Debug\Mandrill.dll
+C:\repos\doctor\doctor\bin\Debug\Newtonsoft.Json.dll
+C:\repos\doctor\doctor\bin\Debug\RestSharp.dll
+C:\repos\doctor\doctor\bin\Debug\Newtonsoft.Json.xml
+C:\repos\doctor\doctor\bin\Debug\RestSharp.xml
