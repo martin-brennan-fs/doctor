@@ -23,7 +23,7 @@ namespace Doctor.Diagnose.Service
                 // Get the value of the configuration from the source.
                 string value = string.Empty;
                 if (!Util.CheckConfigKey(key))
-                    return status.Fail("Could not find app setting with the key " + key);
+                    return status.Fail("Could not find app setting with the key {0}.", key);
 
                 value = Util.GetConfigValue(key);
 
@@ -38,7 +38,7 @@ namespace Doctor.Diagnose.Service
                 }
                 catch (Exception ex)
                 {
-                    return status.Fail("Could not establish a connection to the Mandrill service. " + ex.Message);
+                    return status.Fail("Could not establish a connection to the Mandrill service. {0}.", ex.Message);
                 }
             }
 

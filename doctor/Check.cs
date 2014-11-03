@@ -28,11 +28,11 @@ namespace Doctor
         /// Makes the check pass, stopping the timer
         /// in the process and setting the fail message.
         /// </summary>
-        public Check Fail(string message)
+        public Check Fail(string message, params object[] args)
         {
             this.watch.Stop();
             this.pass = false;
-            this.message = message;
+            this.message = String.Format(message, args);
             return this;
         }
 
@@ -55,7 +55,8 @@ namespace Doctor
             ConnectionString = 1,
             Configuration = 2,
             Service = 3,
-            EFContext = 4
+            EFContext = 4,
+            Endpoint = 5
         }
 
         /// <summary>

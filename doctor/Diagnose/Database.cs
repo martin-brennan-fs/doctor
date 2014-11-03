@@ -29,14 +29,14 @@ namespace Doctor.Diagnose
                 if (source == Check.Source.AppSettings)
                 {
                     if (!Util.CheckConfigKey(key))
-                        return status.Fail("Could not find app setting with the key " + key);
+                        return status.Fail("Could not find app setting with the key {0}.", key);
 
                     value = Util.GetConfigValue(key);
                 }
                 else if (source == Check.Source.ConnectionStrings)
                 {
                     if (!Util.CheckConnectionStringKey(key))
-                        return status.Fail("Could not find connection string with the key " + key);
+                        return status.Fail("Could not find connection string with the key {0}.", key);
 
                     value = Util.GetConnectionStringValue(key);
                 }
@@ -123,7 +123,7 @@ namespace Doctor.Diagnose
             }
             catch (Exception ex)
             {
-                status.Fail("Could not connect to the MySQL database " + connection.Database.ToString() + ". " + ex.Message);
+                status.Fail("Could not connect to the MySQL database. {0}", ex.Message.Replace(connection.Database.ToString(), "*****"));
                 connection.Dispose();
             }
         }
